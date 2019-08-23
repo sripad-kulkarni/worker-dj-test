@@ -1,0 +1,1 @@
+#default_app_config = 'aoo1.apps.aoo1Config'
