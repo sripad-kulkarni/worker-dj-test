@@ -15,14 +15,14 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = 'static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
-WHITENOISE_ROOT = os.path.join(PROJECT_ROOT, 'static', 'root') 
+WHITENOISE_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles', 'root') 
 
 
 # Quick-start development settings - unsuitable for production
@@ -34,7 +34,7 @@ SECRET_KEY = '8334a$pc%!vthg!ilour3rq-6v0c@u&3@4+c_x4on%hl#=-le('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['herokuapp.com']
 
 
 # Application definition
@@ -67,7 +67,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-        		'../project1/staticfiles/'
+        		'../project1/static/'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
