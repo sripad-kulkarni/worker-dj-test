@@ -66,7 +66,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-        	#	'../project1/staticfiles/'
+        		'../project1/staticfiles/'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
