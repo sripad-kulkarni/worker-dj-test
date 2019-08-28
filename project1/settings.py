@@ -66,7 +66,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-        		'../project1/staticfiles/'
+        	#	'../project1/staticfiles/'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -152,7 +152,7 @@ STATICFILES_DIRS = (
 )'''
 
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #import django_heroku
 #django_heroku.settings(locals())
