@@ -32,7 +32,7 @@ WHITENOISE_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles', 'root')
 SECRET_KEY = '8334a$pc%!vthg!ilour3rq-6v0c@u&3@4+c_x4on%hl#=-le('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
