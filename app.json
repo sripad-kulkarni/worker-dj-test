@@ -1,10 +1,12 @@
 {
-	"scripts": {
-    "postdeploy": "sh heroku-post-deploy.sh"
+	"scripts": 
+	{
+    		"postdeploy": "sh heroku-post-deploy.sh"
 	},
-	"env": {
-    	"HEROKU_APP_NAME": {
-        "required": true
-    }
-  }
+	"env": 
+	{
+    		"HEROKU_APP_NAME": {
+        	"required": true
+    		}	
+	}
 }
