@@ -8,7 +8,7 @@
       		"url": "heroku/python"
     	},
     	{
-      		"url": "https://github.com/heroku/cli.git"
+      		"url": "https://github.com/heroku/heroku-buildpack-cli"
     	}
   	]
 
