@@ -3,10 +3,13 @@
 	{
     		"postdeploy": "sh heroku-post-deploy.sh"
 	},
-	"env": 
-	{
-    		"HEROKU_APP_NAME": {
-        	"required": true
-    		}	
-	}
+	"buildpacks": [
+    	{
+      		"url": "https://github.com/heroku/cli.git"
+    	},
+    	{
+      		"url": "heroku/cli"
+    	}
+  	]
+
 }
