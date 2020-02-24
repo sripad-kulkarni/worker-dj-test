@@ -8,7 +8,7 @@
       		"url": "heroku/python"
     	},
     	{
-      		"url": "https://github.com/heroku/cli.git"
+      		"url": "heroku/cli"
     	}
   	]
 
