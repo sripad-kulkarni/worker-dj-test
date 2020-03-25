@@ -88,8 +88,8 @@ WSGI_APPLICATION = 'project1.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 '''
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    default': {
+        'ENGINE': 'django.db.backe'nds.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
@@ -98,19 +98,19 @@ DATABASES = {
     }
 }
 '''
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd96gcmnrh1jboh',
-        'USER': 'adhflmvhkxivhj',
-        'PASSWORD': '00c63b3b3c280e94fd08524990e6daaa7800cfd2ff377218e54dedbcc20f7130',
-        'HOST': 'ec2-50-19-222-129.compute-1.amazonaws.com',
-        'PORT': '5432',
-        'CONN_MAX_AGE': 500
+#        'NAME': 'd96gcmnrh1jboh',
+#        'USER': 'adhflmvhkxivhj',
+#        'PASSWORD': '00c63b3b3c280e94fd08524990e6daaa7800cfd2ff377218e54dedbcc20f7130',
+#        'HOST': 'ec2-50-19-222-129.compute-1.amazonaws.com',
+#        'PORT': '5432',
+#        'CONN_MAX_AGE': 500
     }
-}'''
+}
 
-#DATABASES = {}
+
 import dj_database_url
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
