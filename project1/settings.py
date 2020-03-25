@@ -98,7 +98,7 @@ DATABASES = {
     }
 }
 '''
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
 #        'NAME': 'd96gcmnrh1jboh',
@@ -108,9 +108,9 @@ DATABASES = {
 #        'PORT': '5432',
 #        'CONN_MAX_AGE': 500
     }
-}
+}'''
 
-
+DATABASES = {}
 import dj_database_url
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
