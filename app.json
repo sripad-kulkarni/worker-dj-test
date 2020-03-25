@@ -2,5 +2,13 @@
 	"scripts": 
 	{
     		"postdeploy": "sh heroku-post-deploy.sh"
+	},
+	"environments": {
+    		"test": {
+      			"scripts": {
+        			"test-setup": "pip install gunicorn",
+        			"test": "python manage.py migrate"
+  			}
+		}
 	}
 }
