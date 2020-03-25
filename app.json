@@ -3,13 +3,13 @@
 	{
     		"postdeploy": "sh heroku-post-deploy.sh"
 	},
-	"buildpacks": [
+	/*"buildpacks": [
     	{
       		"url": "https://github.com/heroku/cli.git"
     	},
     	{
       		"url": "heroku/cli"
     	}
-  	]
+  	]*/
 
 }
