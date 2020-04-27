@@ -1,14 +1,1 @@
-env{
-	"scripts": 
-	{
-    		"postdeploy": "sh heroku-post-deploy.sh"
-	},
-	"buildpacks": [
-	{
-      		"url": "heroku/python"
-    	},
-    	{
-      		"url": "https://github.com/heroku/heroku-buildpack-cli"
-    	}
-  	]	
-}
+
