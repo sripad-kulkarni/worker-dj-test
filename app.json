@@ -11,7 +11,5 @@ env{
       		"url": "https://github.com/heroku/heroku-buildpack-cli"
     	}
   	]
-	"env":{
-	"HEROKU_API_KEY"=heroku auth:token
-	}
+	
 }
