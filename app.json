@@ -8,5 +8,5 @@
         }
     },
     
-    "addons": ["heroku-postgres:hobby-basic"]
+    "addons": ["heroku-postgresql:hobby-basic"]
 }
