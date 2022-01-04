@@ -8,5 +8,5 @@
         }
     },
     
-    "addons": ["heroku-postgresql:premium-0"]
+    "addons": ["heroku-postgresql:standard-0"]
 }
