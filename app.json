@@ -9,8 +9,6 @@
             "region":"us-east-1"
           }
         }
-        "papertrail",
-        "heroku-redis:hobby-dev"
       ],
       "formation": {
         "web": {
