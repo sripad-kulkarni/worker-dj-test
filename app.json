@@ -1,10 +1,22 @@
 {
-	"scripts": {
-    "postdeploy": "sh heroku-post-deploy.sh"
-	},
-	"env": {
-    "HEROKU_APP_NAME": {
-        "required": true
+  "environments": {
+    "review": {
+      "stack": "heroku-22",
+      "addons": [
+        "heroku-postgresql:basic",
+        "papertrail",
+        "heroku-redis:hobby-dev"
+      ],
+      "formation": {
+        "web": {
+          "quantity": 1,
+          "size": "private-s"
+        },
+        "worker": {
+          "quantity": 1,
+          "size": "private-s"
+        }
+      }
     }
   }
 }
