@@ -3,7 +3,12 @@
     "review": {
       "stack": "heroku-22",
       "addons": [
-        "heroku-postgresql:basic",
+        {
+          "plan":"heroku-postgresql:basic",
+          "options": {
+            "region":"us-east-1"
+          }
+        }
         "papertrail",
         "heroku-redis:hobby-dev"
       ],
