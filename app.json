@@ -2,6 +2,9 @@
 
 	"environments": {
 		"test": {
+			"scripts": {
+				"test": "python --version"
+			},
 			"addons": [
 				{
 					"plan": "heroku-postgresql:in-dyno"
