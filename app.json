@@ -1,10 +1,24 @@
 {
-	"scripts": {
-    "postdeploy": "sh heroku-post-deploy.sh"
-	},
+
 	"env": {
-    "HEROKU_APP_NAME": {
-        "required": true
-    }
-  }
+		"HEROKU_APP_NAME": {
+		"required": true
+		}
+	},
+	"environments": {
+		"test": {
+			"addons": [
+				{
+					"plan": "heroku-postgresql:in-dyno"
+				},
+				{
+					"plan": "heroku-postgresql:in-dyno",
+					"as": "STATS_DB"
+				},
+				{
+					"plan": "heroku-redis:in-dyno"
+				}
+			]
+		}
+	}
 }
