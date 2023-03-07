@@ -3,7 +3,7 @@
 	"environments": {
 		"test": {
 			"scripts": {
-				"test": "python --version"
+				"test": "printenv STATS_DB"
 			},
 			"addons": [
 				{
