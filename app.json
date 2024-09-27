@@ -8,12 +8,5 @@
         }
     },
     
-    "addons": [
-    {
-      "plan": "heroku-redis:premium-0",
-      "options": {
-        "version": "4.0.14"
-      }
-    }
-    ]
+    "addons": ["heroku-postgresql:premium-0"]
 }
